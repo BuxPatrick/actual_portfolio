@@ -745,7 +745,7 @@ h3
 {
     background: rgba(0,0,0,.4);
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -890,6 +890,14 @@ h3
     border: 2px solid var(--color-gray);
     border-radius: 50%;
 }
+.contact-description a
+{
+    text-decoration: underline;
+}
+.contact-description:hover a
+{
+    color: var(--color-primary);
+}
 @media only screen and (max-width:968px)
 {
     .about-content,
@@ -906,5 +914,35 @@ h3
     .services .service-item
     {
         flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: var(--m-2-5);
+    }
+}
+@media only screen and (max-width:768px)
+{
+    body
+    {
+        margin: var(--header-height) 0 0 0;
+    }
+    .nav
+    {
+        height: var(--header-height);
+    }
+    .nav-list
+    {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+    .nav-menu
+    {
+        position: fixed;
+        background: var(--color-white);
+        width: 80%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        padding: 4rem 0 0 3rem;
+        border-radius: 1rem 0 0 1rem;
+        z-index: 100;
     }
 }
