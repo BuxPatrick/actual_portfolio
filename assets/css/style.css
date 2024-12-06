@@ -7,6 +7,7 @@
     --dark-color-lightness: 17%;
     --light-color-lightness: 92%;
     --white-color-lightness: 100%;
+
     --color-white:hsl(252,30%,var(--white-color-lightness));
     --color-light:hsl(252,30%,var(--light-color-lightness));
     --color-gray:hsl(252,15%,65%);
@@ -565,6 +566,7 @@ h3
     margin: 0 var(--m-0-75);
     cursor: pointer;
     white-space: nowrap;
+    color: var(--color-dark);
     transition: 0.3s;
 }
 .portfolio .portfolio-filter button.active
@@ -889,8 +891,8 @@ h3
 }
 .customize-theme .choose-bg .bg-1
 {
-    background: var(--color-light);
-    color: var(--color-dark);
+    background: hsl(252,30%,92%);
+    color: hsl(252,30%,17%);
 }
 .customize-theme .choose-bg .bg-2
 {
