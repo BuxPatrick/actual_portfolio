@@ -3,11 +3,15 @@
 :root {
     --header-height: 3.5rem;
 
-    --color-white:hsl(252,30%,100%);
-    --color-light:hsl(252,30%,92%);
+    --primary-color-hue:352;
+    --dark-color-lightness: 17%;
+    --light-color-lightness: 92%;
+    --white-color-lightness: 100%;
+    --color-white:hsl(252,30%,var(--white-color-lightness));
+    --color-light:hsl(252,30%,var(--light-color-lightness));
     --color-gray:hsl(252,15%,65%);
-    --color-primary:hsl(352,75%,60%);
-    --color-dark:hsl(252,30%,17%);
+    --color-primary:hsl(var(--primary-color-hue),75%,60%);
+    --color-dark:hsl(252,30%,var(--dark-color-lightness));
 
     --body-font: 'Rubik', sans-serif;
     --h1-font-size: 2.25rem;
@@ -49,6 +53,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
 }
 body,
 button,
@@ -270,6 +278,10 @@ h3
     height: 0.3rem;
     background-color: var(--color-primary);
     border-radius: 50%;
+}
+.scroll-header
+{
+    box-shadow: 0 1px 4px rgba(165,125,125,0.02);
 }
 
 .home
@@ -962,7 +974,7 @@ h3
         width: 80%;
         height: 100%;
         top: 0;
-        right: 100%;
+        right: -100%;
         padding: 4rem 0 0 3rem;
         border-radius: 1rem 0 0 1rem;
         z-index: 100;
