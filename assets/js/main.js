@@ -35,6 +35,30 @@ function scrollHeader()
 }
 window.addEventListener("scroll", scrollHeader)
 
+const sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter()
+{
+    let scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 58,
+        sectionId = current.getAttribute("id");
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
+        {
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add("active-link")
+        }
+        else
+        {
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove("active-link")
+        }
+    })
+}
+
 const theme = document.querySelector("#theme-button");
 const themeModal = document.querySelector(".customize-theme");
 const fontSizes = document.querySelectorAll('.choose-size span')

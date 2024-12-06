@@ -37,6 +37,16 @@
 
     --box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.1);
 }
+::-webkit-scrollbar
+{
+    width: 0.6rem;
+    background: var(--color-white);
+}
+::-webkit-scrollbar-thumb
+{
+    background: var(--color-primary);
+    border-radius: .5rem;
+}
 
 @media screen and (max-width:992px)
 {
@@ -117,7 +127,7 @@ h3
 }
 .section .container
 {
-    padding-top: 3.7rem;
+    padding-top: 3.90rem;
     padding-bottom: 4.75;
 }
 .section-title
