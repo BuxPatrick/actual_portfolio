@@ -455,6 +455,44 @@ h3
     right: 0;
     top: -2.5rem;
 }
+.about-content .tech-skills
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: var(--m-2);
+}
+.about-content .tech-skills > h4
+{
+    margin-bottom: var(--m-1);
+}
+.tech-skill-group:not(:last-child)
+{
+    margin-bottom: var(--m-1);
+}
+.tech-skill-group h5
+{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--color-gray);
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-bottom: var(--m-0-5);
+}
+.tech-tags
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--m-0-5);
+    list-style: none;
+}
+.tech-tags li
+{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-size: var(--small-font-size);
+    padding: .35rem .75rem;
+    border-radius: var(--border-radius);
+}
 .services .service-item
 {
     flex: 0 0 33.33%;
