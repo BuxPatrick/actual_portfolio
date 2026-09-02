@@ -459,24 +459,31 @@ h3
 {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-top: var(--m-2);
+    margin-top: var(--m-1-5);
 }
 .about-content .tech-skills > h4
 {
     margin-bottom: var(--m-1);
 }
+.tech-skill-group
+{
+    display: flex;
+    align-items: flex-start;
+    gap: var(--m-1);
+}
 .tech-skill-group:not(:last-child)
 {
-    margin-bottom: var(--m-1);
+    margin-bottom: var(--m-0-75);
 }
 .tech-skill-group h5
 {
+    flex: 0 0 9.75rem;
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     color: var(--color-gray);
     text-transform: uppercase;
     letter-spacing: .05em;
-    margin-bottom: var(--m-0-5);
+    padding: .35rem 0;
 }
 .tech-tags
 {
@@ -484,6 +491,7 @@ h3
     flex-wrap: wrap;
     gap: var(--m-0-5);
     list-style: none;
+    flex: 1;
 }
 .tech-tags li
 {
@@ -1058,6 +1066,20 @@ h3
     .about-content .about-text
     {
         margin-bottom: var(--m-1-5);
+    }
+    .tech-skill-group
+    {
+        flex-direction: column;
+        gap: var(--m-0-5);
+    }
+    .tech-skill-group h5
+    {
+        flex: 0 0 auto;
+        padding: 0;
+    }
+    .tech-skill-group:not(:last-child)
+    {
+        margin-bottom: var(--m-1);
     }
     .contact-data,
     .education
