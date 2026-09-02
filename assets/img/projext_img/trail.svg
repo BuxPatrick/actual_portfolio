@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="trailbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f7a5c"/>
+      <stop offset="100%" stop-color="#3fae86"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#trailbg)"/>
+  <g opacity="0.9">
+    <rect x="286" y="300" width="452" height="76" rx="20" fill="#ffffff" opacity="0.28"/>
+    <rect x="286" y="410" width="452" height="76" rx="20" fill="#ffffff" opacity="0.4"/>
+    <rect x="286" y="520" width="452" height="76" rx="20" fill="#ffffff" opacity="0.55"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M330 338 l26 26 l52 -52"/>
+    <path d="M330 448 l26 26 l52 -52"/>
+  </g>
+  <text x="512" y="760" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="86" fill="#ffffff">Trail</text>
+</svg>

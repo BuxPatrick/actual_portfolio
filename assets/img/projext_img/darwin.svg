@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="darwinbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4e8c"/>
+      <stop offset="100%" stop-color="#3f9bd6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#darwinbg)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity="0.75">
+    <path d="M330 620 C 330 420, 694 604, 694 404"/>
+    <path d="M330 500 C 330 300, 694 484, 694 284"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="330" cy="620" r="19"/>
+    <circle cx="330" cy="500" r="19"/>
+    <circle cx="694" cy="404" r="19"/>
+    <circle cx="694" cy="284" r="19"/>
+    <circle cx="512" cy="452" r="31"/>
+  </g>
+  <text x="512" y="800" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="86" fill="#ffffff">Darwin</text>
+</svg>
